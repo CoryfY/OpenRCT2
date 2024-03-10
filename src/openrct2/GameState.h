@@ -30,6 +30,9 @@
 #include <unordered_map>
 #include <vector>
 
+constexpr int8_t kParkRatingHistorySize = 32;
+
+
 namespace OpenRCT2
 {
     class Park;
@@ -50,7 +53,7 @@ namespace OpenRCT2
         money64 ConstructionRightsPrice;
         money64 CurrentExpenditure;
         money64 CurrentProfit;
-        uint8_t ParkRatingHistory[32];
+        uint8_t ParkRatingHistory[kParkRatingHistorySize];
         uint32_t GuestsInParkHistory[32];
         ClimateType Climate;
         ClimateState ClimateCurrent;
